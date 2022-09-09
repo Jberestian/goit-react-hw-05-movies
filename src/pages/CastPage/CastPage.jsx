@@ -6,6 +6,7 @@ import { getMovieCast } from 'shared/api/movieApi';
 
 const CastPage = () => {
   const [cast, setCast] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState(null);
   const { movieId } = useParams();
 
@@ -19,7 +20,7 @@ const CastPage = () => {
       }
     };
     fetchCast();
-  }, []);
+  }, [movieId]);
 
   const items = cast.map(({ cast_id, character, name, profile_path }) => {
     const imgSrc = `https://image.tmdb.org/t/p/w200${profile_path}`;
