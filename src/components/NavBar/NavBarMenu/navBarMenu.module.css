@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  align-items: center;
+  margin: 50px 50px;
+}
+
+.link {
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid aqua;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+.link.active {
+  background-color: gray;
+  color: red;
+}
