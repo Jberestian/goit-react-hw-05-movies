@@ -7,11 +7,12 @@ import {
   useLocation,
 } from 'react-router-dom';
 
-import style from './movieInfo.module.css';
-
 import { getMovieDedails } from 'shared/api/movieApi';
+
 import Loader from 'shared/components/Loader/Loader';
 import Error from 'pages/Error/Error';
+
+import style from './movieInfo.module.css';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -57,14 +58,14 @@ const MovieDetails = () => {
 
   return (
     <>
-      <div className={style.details}>
+      <div className={style.moviInfo}>
         <div className="container">
           {loading && <Loader />}
           {error && <Error />}
           <button onClick={goBack}>Go Back</button>
           {state && (
             <div className={style.info}>
-              <div className={style.imgBox}>
+              <div className={style.imgWrapper}>
                 <img
                   className={style.img}
                   src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
@@ -72,17 +73,17 @@ const MovieDetails = () => {
                 />
               </div>
 
-              <div className={style.about}>
+              <div className={style.aboutMovie}>
                 <h1 className={style.title}>{name || title}</h1>
-                <p className={style.score}>User Score: {vote_average}</p>
+                <p className={style.raining}>User Score: {vote_average}</p>
                 <p className={style.overview}>Overview</p>
                 <p className={style.overviewText}>{overview}</p>
                 <p className={style.genres}>Genres</p>
                 <ul className={style.generList}>{generList}</ul>
 
-                <p className={style.add}>Additional Information</p>
+                <p className={style.additionalInfo}>Additional Information</p>
 
-                <div className={style.links}>
+                <div className={style.linkWrapper}>
                   <Link
                     state={from}
                     className={style.link}

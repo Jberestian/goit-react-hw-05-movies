@@ -1,0 +1,87 @@
+.moviInfo {
+  max-width: 850px;
+  margin: 10px auto 0;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+}
+
+.imgWrapper {
+  max-width: 400px;
+  margin-right: 40px;
+}
+
+.img {
+  width: 100%;
+}
+
+.aboutMovie {
+  max-width: 300px;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.raining {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.overview {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.overviewText {
+  margin-bottom: 20px;
+}
+
+.genres {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.generList {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item {
+  font-weight: 700;
+}
+
+.item + .item {
+  margin-left: 20px;
+}
+
+.additionalInfo {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  border: 2px solid aqua;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #fff;
+  margin-right: 20px;
+}
