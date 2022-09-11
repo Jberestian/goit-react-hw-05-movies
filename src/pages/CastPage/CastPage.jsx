@@ -27,10 +27,10 @@ const CastPage = () => {
     const imgPlug = 'http://via.placeholder.com/120x180';
     const src = profile_path ? imgSrc : imgPlug;
     return (
-      <li className={style.item} key={cast_id}>
-        <img className={style.img} src={src} alt={name} />
+      <li key={cast_id}>
+        <img src={src} alt={name} />
         <p className={style.name}>{name}</p>
-        <p className={style.char}>character: {character}</p>
+        <p className={style.text}>character: {character}</p>
       </li>
     );
   });
