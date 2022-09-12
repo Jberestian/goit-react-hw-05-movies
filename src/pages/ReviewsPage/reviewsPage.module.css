@@ -1,0 +1,17 @@
+.items {
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

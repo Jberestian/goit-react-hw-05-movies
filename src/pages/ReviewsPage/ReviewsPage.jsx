@@ -24,9 +24,9 @@ const ReviewsPage = () => {
   }, [movieId]);
 
   const items = review.map(({ content, author, id }) => (
-    <li className={style.item} key={id}>
-      <p className={style.author}>{author}</p>
-      <p className={style.post}>{content}</p>
+    <li className={style.items} key={id}>
+      <p className={style.title}>{author}</p>
+      <p className={style.description}>{content}</p>
     </li>
   ));
 

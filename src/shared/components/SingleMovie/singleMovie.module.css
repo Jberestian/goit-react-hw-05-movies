@@ -1,15 +1,17 @@
 .items {
   max-width: 200px;
-  border: 1px solid #ada6a6;
+  border: 1px solid aqua;
   padding: 10px;
   text-align: center;
 }
 
-.item a {
-  font-size: 20px;
+.item,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   color: #000;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .img {
